@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,36 +7,53 @@
 </head>
 <body>
 
+<!-- Navigation -->
+<nav class="navbar">
+    <h2>Dream Tours</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Header -->
 <header>
     <h1>Dream Tours & Travels</h1>
     <p>Your Journey Begins Here</p>
 </header>
 
-<section>
+<!-- Grid Layout -->
+<div class="container">
+
+<section id="about" class="card">
     <h2>About Us</h2>
     <p>
-        Dream Tours & Travels offers affordable and memorable travel packages 
-        across India and abroad. Travel with comfort and safety.
+        Dream Tours & Travels offers affordable and memorable travel packages
+        across India and abroad with comfort and safety.
     </p>
 </section>
 
-<section>
+<section id="packages" class="card">
     <h2>Popular Packages</h2>
     <img src="https://via.placeholder.com/350x200" alt="Tour Package">
     <p>Goa | Manali | Kerala | Dubai</p>
 </section>
 
-<section>
+<section id="contact" class="card">
     <h2>Contact Us</h2>
-    <p>
-        📍 Location: Hyderabad<br>
-        📞 Phone: 9876543210<br>
-        📧 Email: dreamtours@gmail.com
-    </p>
-    <a href="https://www.google.com/maps" target="_blank">View on Map</a>
+
+    <!-- Contact Form -->
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Enquiry</button>
+        <p id="errorMsg"></p>
+    </form>
 </section>
 
-<button onclick="bookNow()">Book Now</button>
+</div>
 
 <script src="script.js"></script>
 </body>
